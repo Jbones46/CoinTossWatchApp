@@ -12,7 +12,63 @@
 		D0E1CADB1BD969570070211F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CAD91BD969570070211F /* Main.storyboard */; };
 		D0E1CADD1BD969570070211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CADC1BD969570070211F /* Assets.xcassets */; };
 		D0E1CAE01BD969570070211F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CADE1BD969570070211F /* LaunchScreen.storyboard */; };
+		D0E1CAED1BD969930070211F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CAEB1BD969930070211F /* Interface.storyboard */; };
+		D0E1CAEF1BD969930070211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CAEE1BD969930070211F /* Assets.xcassets */; };
+		D0E1CAF61BD969930070211F /* CoinTossWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0E1CAF51BD969930070211F /* CoinTossWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0E1CAFD1BD969930070211F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1CAFC1BD969930070211F /* InterfaceController.swift */; };
+		D0E1CAFF1BD969930070211F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1CAFE1BD969930070211F /* ExtensionDelegate.swift */; };
+		D0E1CB011BD969930070211F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1CB001BD969930070211F /* NotificationController.swift */; };
+		D0E1CB031BD969930070211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB021BD969930070211F /* Assets.xcassets */; };
+		D0E1CB071BD969930070211F /* CoinTossWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0E1CAE91BD969930070211F /* CoinTossWatch.app */; };
+		D0E1CB121BD96E980070211F /* quarter-heads.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB101BD96E980070211F /* quarter-heads.png */; settings = {ASSET_TAGS = (); }; };
+		D0E1CB131BD96E980070211F /* quarter-heads.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB101BD96E980070211F /* quarter-heads.png */; settings = {ASSET_TAGS = (); }; };
+		D0E1CB141BD96E980070211F /* quarter-heads.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB101BD96E980070211F /* quarter-heads.png */; settings = {ASSET_TAGS = (); }; };
+		D0E1CB151BD96E980070211F /* quarter-tails.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB111BD96E980070211F /* quarter-tails.png */; settings = {ASSET_TAGS = (); }; };
+		D0E1CB161BD96E980070211F /* quarter-tails.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB111BD96E980070211F /* quarter-tails.png */; settings = {ASSET_TAGS = (); }; };
+		D0E1CB171BD96E980070211F /* quarter-tails.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E1CB111BD96E980070211F /* quarter-tails.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E1CAF71BD969930070211F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E1CACA1BD969570070211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E1CAF41BD969930070211F;
+			remoteInfo = "CoinTossWatch Extension";
+		};
+		D0E1CB051BD969930070211F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E1CACA1BD969570070211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E1CAE81BD969930070211F;
+			remoteInfo = CoinTossWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0E1CB0B1BD969930070211F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0E1CAF61BD969930070211F /* CoinTossWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E1CB0F1BD969930070211F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0E1CB071BD969930070211F /* CoinTossWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D0E1CAD21BD969570070211F /* CoinToss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinToss.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +78,30 @@
 		D0E1CADC1BD969570070211F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E1CADF1BD969570070211F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E1CAE11BD969570070211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E1CAE91BD969930070211F /* CoinTossWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTossWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E1CAEC1BD969930070211F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D0E1CAEE1BD969930070211F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0E1CAF01BD969930070211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E1CAF51BD969930070211F /* CoinTossWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoinTossWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E1CAFB1BD969930070211F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D0E1CAFC1BD969930070211F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0E1CAFE1BD969930070211F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D0E1CB001BD969930070211F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D0E1CB021BD969930070211F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0E1CB041BD969930070211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E1CB101BD96E980070211F /* quarter-heads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quarter-heads.png"; sourceTree = "<group>"; };
+		D0E1CB111BD96E980070211F /* quarter-tails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quarter-tails.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0E1CACF1BD969570070211F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E1CAF21BD969930070211F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				D0E1CAD41BD969570070211F /* CoinToss */,
+				D0E1CAEA1BD969930070211F /* CoinTossWatch */,
+				D0E1CAF91BD969930070211F /* CoinTossWatch Extension */,
 				D0E1CAD31BD969570070211F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				D0E1CAD21BD969570070211F /* CoinToss.app */,
+				D0E1CAE91BD969930070211F /* CoinTossWatch.app */,
+				D0E1CAF51BD969930070211F /* CoinTossWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +144,39 @@
 			path = CoinToss;
 			sourceTree = "<group>";
 		};
+		D0E1CAEA1BD969930070211F /* CoinTossWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1CAEB1BD969930070211F /* Interface.storyboard */,
+				D0E1CAEE1BD969930070211F /* Assets.xcassets */,
+				D0E1CAF01BD969930070211F /* Info.plist */,
+			);
+			path = CoinTossWatch;
+			sourceTree = "<group>";
+		};
+		D0E1CAF91BD969930070211F /* CoinTossWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1CAFC1BD969930070211F /* InterfaceController.swift */,
+				D0E1CAFE1BD969930070211F /* ExtensionDelegate.swift */,
+				D0E1CB001BD969930070211F /* NotificationController.swift */,
+				D0E1CB021BD969930070211F /* Assets.xcassets */,
+				D0E1CB101BD96E980070211F /* quarter-heads.png */,
+				D0E1CB111BD96E980070211F /* quarter-tails.png */,
+				D0E1CB041BD969930070211F /* Info.plist */,
+				D0E1CAFA1BD969930070211F /* Supporting Files */,
+			);
+			path = "CoinTossWatch Extension";
+			sourceTree = "<group>";
+		};
+		D0E1CAFA1BD969930070211F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1CAFB1BD969930070211F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +187,51 @@
 				D0E1CACE1BD969570070211F /* Sources */,
 				D0E1CACF1BD969570070211F /* Frameworks */,
 				D0E1CAD01BD969570070211F /* Resources */,
+				D0E1CB0F1BD969930070211F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0E1CB061BD969930070211F /* PBXTargetDependency */,
 			);
 			name = CoinToss;
 			productName = CoinToss;
 			productReference = D0E1CAD21BD969570070211F /* CoinToss.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D0E1CAE81BD969930070211F /* CoinTossWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E1CB0C1BD969930070211F /* Build configuration list for PBXNativeTarget "CoinTossWatch" */;
+			buildPhases = (
+				D0E1CAE71BD969930070211F /* Resources */,
+				D0E1CB0B1BD969930070211F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E1CAF81BD969930070211F /* PBXTargetDependency */,
+			);
+			name = CoinTossWatch;
+			productName = CoinTossWatch;
+			productReference = D0E1CAE91BD969930070211F /* CoinTossWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D0E1CAF41BD969930070211F /* CoinTossWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E1CB081BD969930070211F /* Build configuration list for PBXNativeTarget "CoinTossWatch Extension" */;
+			buildPhases = (
+				D0E1CAF11BD969930070211F /* Sources */,
+				D0E1CAF21BD969930070211F /* Frameworks */,
+				D0E1CAF31BD969930070211F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoinTossWatch Extension";
+			productName = "CoinTossWatch Extension";
+			productReference = D0E1CAF51BD969930070211F /* CoinTossWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +243,14 @@
 				ORGANIZATIONNAME = "Justin Ferre";
 				TargetAttributes = {
 					D0E1CAD11BD969570070211F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = DW2D48JLN6;
+					};
+					D0E1CAE81BD969930070211F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = DW2D48JLN6;
+					};
+					D0E1CAF41BD969930070211F = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = DW2D48JLN6;
 					};
@@ -113,6 +270,8 @@
 			projectRoot = "";
 			targets = (
 				D0E1CAD11BD969570070211F /* CoinToss */,
+				D0E1CAE81BD969930070211F /* CoinTossWatch */,
+				D0E1CAF41BD969930070211F /* CoinTossWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +283,30 @@
 			files = (
 				D0E1CAE01BD969570070211F /* LaunchScreen.storyboard in Resources */,
 				D0E1CADD1BD969570070211F /* Assets.xcassets in Resources */,
+				D0E1CB151BD96E980070211F /* quarter-tails.png in Resources */,
+				D0E1CB121BD96E980070211F /* quarter-heads.png in Resources */,
 				D0E1CADB1BD969570070211F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E1CAE71BD969930070211F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E1CB131BD96E980070211F /* quarter-heads.png in Resources */,
+				D0E1CAEF1BD969930070211F /* Assets.xcassets in Resources */,
+				D0E1CB161BD96E980070211F /* quarter-tails.png in Resources */,
+				D0E1CAED1BD969930070211F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E1CAF31BD969930070211F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E1CB171BD96E980070211F /* quarter-tails.png in Resources */,
+				D0E1CB141BD96E980070211F /* quarter-heads.png in Resources */,
+				D0E1CB031BD969930070211F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +322,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0E1CAF11BD969930070211F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E1CB011BD969930070211F /* NotificationController.swift in Sources */,
+				D0E1CAFF1BD969930070211F /* ExtensionDelegate.swift in Sources */,
+				D0E1CAFD1BD969930070211F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E1CAF81BD969930070211F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E1CAF41BD969930070211F /* CoinTossWatch Extension */;
+			targetProxy = D0E1CAF71BD969930070211F /* PBXContainerItemProxy */;
+		};
+		D0E1CB061BD969930070211F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E1CAE81BD969930070211F /* CoinTossWatch */;
+			targetProxy = D0E1CB051BD969930070211F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0E1CAD91BD969570070211F /* Main.storyboard */ = {
@@ -157,6 +362,14 @@
 				D0E1CADF1BD969570070211F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0E1CAEB1BD969930070211F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0E1CAEC1BD969930070211F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -267,6 +480,67 @@
 			};
 			name = Release;
 		};
+		D0E1CB091BD969930070211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CoinTossWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justinferre.CoinToss.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D0E1CB0A1BD969930070211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CoinTossWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justinferre.CoinToss.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D0E1CB0D1BD969930070211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CoinTossWatch_Extension;
+				INFOPLIST_FILE = CoinTossWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = justinferre.CoinToss.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D0E1CB0E1BD969930070211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CoinTossWatch_Extension;
+				INFOPLIST_FILE = CoinTossWatch/Info.plist;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = justinferre.CoinToss.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +558,22 @@
 			buildConfigurations = (
 				D0E1CAE51BD969570070211F /* Debug */,
 				D0E1CAE61BD969570070211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0E1CB081BD969930070211F /* Build configuration list for PBXNativeTarget "CoinTossWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E1CB091BD969930070211F /* Debug */,
+				D0E1CB0A1BD969930070211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0E1CB0C1BD969930070211F /* Build configuration list for PBXNativeTarget "CoinTossWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E1CB0D1BD969930070211F /* Debug */,
+				D0E1CB0E1BD969930070211F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
